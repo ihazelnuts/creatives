@@ -4,6 +4,8 @@ Author: Hazel Gwenn Saingan
 Author URI: https://github.com/ihazelnuts
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 .cover-photo{
 	background: url(https://images.pexels.com/photos/5097165/pexels-photo-5097165.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
 	background-size: cover;
@@ -42,9 +44,7 @@ p,li{
 }
 .column-gap{
     border: 8px solid #F0F2F5;
-    /*border-right: 8px solid #F0F2F5;
-    border-bottom: 8px solid #F0F2F5;*/
-}
+} */
 
 /* Custom Tabs */
 .nav-tabs {
@@ -70,6 +70,9 @@ p,li{
 .nav-tabs .nav-link {
     border: none;
 }
+.nav-tabs {
+    border-bottom: none !important;
+}
 .tabs-content{
 	border-radius: 20px;
 }
@@ -77,7 +80,6 @@ p,li{
 /* Light & Dark Mode Styles */ 
 body {
     background-color: #F0F2F5;
-    /*transition: background-color .1s;*/
 }
 
 body[light-mode=dark] {
@@ -87,8 +89,6 @@ body[light-mode=dark] {
 
 body[light-mode=dark] .column-gap{
     border: 8px solid #18191A;
-    /*border-right: 8px solid #18191A;
-    border-bottom: 8px solid #18191A;*/
 }
 
 body[light-mode=dark] .bg-dark-mode {
@@ -137,7 +137,7 @@ body[light-mode=dark] .light-mode-button span:nth-child(2) {
 }
 
 .light-mode-button:focus {
-    outline:none; /* Not ideal for accessibility */
+    outline:none; 
 }
 
 .light-mode-button span:nth-child(1) {
@@ -192,5 +192,3 @@ body[light-mode=dark] .light-mode-button span:nth-child(2) {
         margin-top: -100px;
     }
 }
-
-

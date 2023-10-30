@@ -1,0 +1,255 @@
+/*
+Theme Name: Facebook Themed Resume Light & Dark Version
+Author: Hazel Gwenn Saingan
+Author URI: https://github.com/ihazelnuts
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html, body{
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Custom Navbar */
+ul{
+    list-style-type: none;
+}
+.wrapHead{
+    width: 90%;
+    margin: 0 auto;
+    transition: all ease-in-out 0.5s;
+}
+.wrapHead.fixed-to-top{
+    width: 96%;
+}
+header{
+    position: fixed;
+    width: 100%;
+    background: transparent;
+    padding: 10px 0;
+    z-index: 1;
+    transition: all ease-in-out 0.5s;
+}
+header:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+header.fixed-to-top{
+    background: rgba(255, 255, 255, 1);
+}
+#brand{
+    color: #ccc;
+    float: left;
+}
+#brand h1{
+    letter-spacing: 10px;
+    text-shadow: 2px 2px 5px #111;
+}
+nav{
+    float: right;
+    margin-top: 10px;
+}
+nav li{
+    display: inline-block;
+    margin: 0 4px;
+}
+nav li a{
+    padding: 10px 0;
+    text-decoration: none;
+    color: #000;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: -1px;
+    transition: all ease-in-out 0.5s;
+}
+nav li a:hover{
+    color: #AE34AB;
+}
+nav li a .active{
+    color: #AE34AB;
+}
+
+/* Custom Background */
+.masthead{
+    background: url(img/assets/bg.jpg);
+    background-size: cover;
+	background-position: center;
+    padding-bottom: 78px;
+}
+.testhead{
+    background: url(img/assets/bg.jpg);
+    background-size: cover;
+	background-position: top;
+}
+.navy-bg{
+    background: #08063A;
+}
+
+/* Custom Fonts & Colors */
+h1{
+    font-size: 55px;
+    font-weight: 500;
+    letter-spacing: -3px;
+}
+h2{
+    font-size: 45px;
+    font-weight: 500;
+    letter-spacing: -3px;
+}
+h6{
+    font-size: 18px;
+    letter-spacing: -1px;
+    color: #3798C6;
+}
+p{
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: -1px;
+}
+a.nav-link {
+    letter-spacing: -1px;
+    font-weight: 300;
+}
+.text-gradient{
+    background: -webkit-linear-gradient(45deg, #AE34AB, #2D9FC8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Custom Width & Padding */
+.logo{
+    max-width: 150px;
+}
+.user-profile{
+    max-width: 150px;
+}
+.py-5{
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+.design-work{
+    border-radius: 15px;
+}
+
+/* buttons */
+.navy-btn{
+    background:#08063A;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 100px;
+    padding: 13px 30px;
+    color: #fff;
+    transition-duration: 2s;
+}
+.navy-btn:hover{
+    background-image: linear-gradient(45deg, #AE34AB, #2D9FC8);
+    transform:scale(1.1);
+    color: #fff;
+    text-decoration: none;
+}
+.white-btn{
+    background: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 100px;
+    padding: 13px 30px;
+    color: #08063A;
+}
+.white-btn:hover{
+    text-decoration: none;
+    color: #08063A;
+}
+.nav-btn-navy{
+    background:#08063A;
+    border-radius: 100px;
+    padding: 7px 20px !important;
+    transition: .5s;
+}
+.nav-btn-navy:hover{
+    background:#AE34AB;
+}
+button{
+    border: none;
+}
+
+/* Testimonial */
+.test-card{
+    background: #fff;
+    border-radius: 15px;
+    transition: .5s;
+}
+.test-card:hover{
+    filter: drop-shadow(0px 1px 9px #d4d4d4);
+    cursor: default;
+}
+.position-company{
+    font-size: 14px;
+    color: #A9A9A9 !important;
+}
+
+/* Slider */
+.slick-slide {
+    margin: 0px 10px;
+}
+.logo-carousel {
+    overflow: inherit;
+}
+button.slick-prev.slick-arrow {
+    display: none !important;
+}
+button.slick-next.slick-arrow {
+    display: none !important;
+}
+.slider-section{
+    margin-top: -80px;
+}
+.card-services{
+    height: 250px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.slick-slider {
+    height: min-content;
+}
+
+.display-desktop{
+    display: block;
+}
+.display-mobile{
+    display: none;
+}
+
+@media (max-width: 768px){
+	h1{
+        font-size: 36px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    .masthead{
+        padding-bottom: 110px;
+        padding-top: 50px;
+    }
+    .py-5{
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+    .display-desktop{
+        display: none;
+    }
+    .display-mobile{
+        display: block;
+    }
+    header{
+        background: #fff;
+    }
+    nav.container.navbar.fixed-top.navbar-expand-lg.navbar-light.bg-white {
+        padding-top: 0;
+    }
+    .logo {
+        max-width: 50%;
+    }
+}
+
