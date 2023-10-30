@@ -76,7 +76,7 @@ nav li a .active{
     background: url(img/assets/bg.jpg);
     background-size: cover;
 	background-position: center;
-    padding-bottom: 78px;
+    padding-bottom: 110px;
 }
 .testhead{
     background: url(img/assets/bg.jpg);
@@ -131,6 +131,10 @@ a.nav-link {
 }
 .design-work{
     border-radius: 15px;
+}
+.project-w{
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 /* buttons */
@@ -203,10 +207,9 @@ button.slick-next.slick-arrow {
     display: none !important;
 }
 .slider-section{
-    margin-top: -80px;
+    margin-top: -105px;
 }
 .card-services{
-    height: 250px;
     border-radius: 15px;
     background-color: #fff;
 }
@@ -219,6 +222,19 @@ button.slick-next.slick-arrow {
 }
 .display-mobile{
     display: none;
+}
+
+@media (max-width: 970px){
+    .masthead {
+        padding-bottom: 48px;
+    }
+    .slider-section {
+        margin-top: -63px;
+    }
+    .project-w{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
 
 @media (max-width: 768px){
@@ -251,5 +267,15 @@ button.slick-next.slick-arrow {
     .logo {
         max-width: 50%;
     }
+    .project-w{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
+@media (max-width: 375px){
+    .navbar-light .navbar-toggler {
+        position: absolute;
+        right: 17px;
+    }
+}
