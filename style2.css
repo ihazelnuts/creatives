@@ -4,10 +4,10 @@ Author: Hazel Gwenn Saingan
 Author URI: https://github.com/ihazelnuts
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
 
 html, body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -89,14 +89,14 @@ nav li a.active{
 
 /* Custom Fonts & Colors */
 h1{
-    font-size: 55px;
-    font-weight: 500;
-    letter-spacing: -3px;
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: -0.07em;
 }
 h2{
-    font-size: 45px;
-    font-weight: 500;
-    letter-spacing: -3px;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: -0.05em;
 }
 h6{
     font-size: 18px;
@@ -240,11 +240,9 @@ button.slick-next.slick-arrow {
 @media (max-width: 768px){
 	h1{
         font-size: 30px;
-        letter-spacing: -2px;
     }
     h2{
         font-size: 25px;
-        letter-spacing: -2px;
     }
     .masthead{
         padding-bottom: 110px;
