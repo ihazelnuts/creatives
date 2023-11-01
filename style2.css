@@ -59,7 +59,7 @@ nav li a{
     padding: 10px 0;
     text-decoration: none;
     color: #000;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 16px;
     letter-spacing: -1px;
     transition: all ease-in-out 0.5s;
@@ -67,7 +67,7 @@ nav li a{
 nav li a:hover{
     color: #AE34AB;
 }
-nav li a .active{
+nav li a.active{
     color: #AE34AB;
 }
 
@@ -140,7 +140,7 @@ a.nav-link {
 /* buttons */
 .navy-btn{
     background:#08063A;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     border-radius: 100px;
     padding: 13px 30px;
@@ -155,7 +155,7 @@ a.nav-link {
 }
 .white-btn{
     background: #fff;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     border-radius: 100px;
     padding: 13px 30px;
@@ -239,10 +239,12 @@ button.slick-next.slick-arrow {
 
 @media (max-width: 768px){
 	h1{
-        font-size: 36px;
+        font-size: 30px;
+        letter-spacing: -2px;
     }
     h2{
-        font-size: 30px;
+        font-size: 25px;
+        letter-spacing: -2px;
     }
     .masthead{
         padding-bottom: 110px;
@@ -271,11 +273,24 @@ button.slick-next.slick-arrow {
         padding-left: 20px;
         padding-right: 20px;
     }
+    a.nav-link.nav-btn-navy.text-white {
+        width: fit-content;
+    }
+    .logo-footer {
+        max-width: 100px;
+    }
+    .footer-content {
+        font-size: 12px;
+    }
+    p, .white-btn, .navy-btn {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 375px){
     .navbar-light .navbar-toggler {
         position: absolute;
         right: 17px;
+        top: 8px;
     }
 }
