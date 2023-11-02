@@ -61,7 +61,7 @@ nav li a{
     color: #000;
     font-weight: 400;
     font-size: 16px;
-    letter-spacing: -1px;
+    letter-spacing: -.4px;
     transition: all ease-in-out 0.5s;
 }
 nav li a:hover{
@@ -76,7 +76,7 @@ nav li a.active{
     background: url(img/assets/bg.jpg);
     background-size: cover;
 	background-position: center;
-    padding-bottom: 110px;
+    height: 70vh;
 }
 .testhead{
     background: url(img/assets/bg.jpg);
@@ -85,6 +85,9 @@ nav li a.active{
 }
 .navy-bg{
     background: #08063A;
+}
+.light-bg{
+    background-color: #FCFCFE;
 }
 
 /* Custom Fonts & Colors */
@@ -99,14 +102,14 @@ h2{
     letter-spacing: -0.05em;
 }
 h6{
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: -1px;
     color: #3798C6;
 }
 p{
     font-weight: 300;
     font-size: 16px;
-    letter-spacing: -1px;
+    letter-spacing: -.3px;
 }
 a.nav-link {
     letter-spacing: -1px;
@@ -184,6 +187,11 @@ button{
     border-radius: 15px;
     transition: .5s;
 }
+.test-card2{
+    background: #FCFCFE;
+    border-radius: 15px;
+    transition: .5s;
+}
 .test-card:hover{
     filter: drop-shadow(0px 1px 9px #d4d4d4);
     cursor: default;
@@ -199,6 +207,8 @@ button{
 }
 .logo-carousel {
     overflow: inherit;
+    max-width: 500px;
+    align-items: center;
 }
 button.slick-prev.slick-arrow {
     display: none !important;
@@ -210,13 +220,14 @@ button.slick-next.slick-arrow {
     margin-top: -105px;
 }
 .card-services{
-    border-radius: 15px;
-    background-color: #fff;
+    background-color: transparent;
+    max-width: 150px;;
 }
 .slick-slider {
     height: min-content;
 }
 
+/* Device Display */
 .display-desktop{
     display: block;
 }
@@ -224,10 +235,63 @@ button.slick-next.slick-arrow {
     display: none;
 }
 
+/* Card Custom */
+.card {
+    --blur: 16px;
+    --size: clamp(300px, 50vmin, 600px);
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    color: #000;
+    transform: translateZ(0);
+}
+
+.card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(calc(1 + (var(--hover, 0) * 0.25))) rotate(calc(var(--hover, 0) * -5deg));
+    transition: transform 0.2s;
+}
+
+.card__footer {
+    padding: 0 1.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: red;
+    display: grid;
+    grid-template-row: auto auto;
+    gap: 0.5ch;
+    background: hsl(0deg 0% 0% / 50%);
+    backdrop-filter: blur(var(--blur));
+    height: 22%;
+    align-content: center;
+}
+
+.card-label{
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 0;
+}
+
+.card__footer span:nth-of-type(1) {
+    font-size: calc(var(--size) * 0.065);
+}
+
+.card__footer span:nth-of-type(2) {
+    font-size: calc(var(--size) * 0.035);
+}
+
+.card:is(:hover, :focus-visible) {
+    --hover: 1;
+}
+
 @media (max-width: 970px){
-    .masthead {
-        padding-bottom: 48px;
-    }
     .slider-section {
         margin-top: -63px;
     }
@@ -245,7 +309,6 @@ button.slick-next.slick-arrow {
         font-size: 25px;
     }
     .masthead{
-        padding-bottom: 110px;
         padding-top: 50px;
     }
     .py-5{
@@ -283,6 +346,9 @@ button.slick-next.slick-arrow {
     p, .white-btn, .navy-btn {
         font-size: 14px;
     }
+    .sa-indent{
+        text-align: center !important;
+    }
 }
 
 @media (max-width: 375px){
@@ -290,5 +356,8 @@ button.slick-next.slick-arrow {
         position: absolute;
         right: 17px;
         top: 8px;
+    }
+    .masthead{
+        height: 100%;
     }
 }
